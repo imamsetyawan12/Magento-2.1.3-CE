@@ -1,0 +1,107 @@
+// /**
+//  * Copyright © 2016 Magento. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Tiok theme overrides
+//  _____________________________________________
+
+//  Theme file should contain declarations (overrides) ONLY OF EXISTING variables
+//  Otherwise this theme won't be available for parent nesting
+//  All new variables should be placed in local theme lib or local theme files
+
+//
+//  Page Background Color
+//  ---------------------------------------------
+
+
+//
+//  Typography
+//  ---------------------------------------------
+
+// Delta Fonts
+.lib-font-face(
+    @family-name: 'Delta Italic',
+    @font-path: '@{baseDir}fonts/delta_jaeger_medium_italic-webfont',
+    @font-weight: normal,
+    @font-style: normal
+);
+
+//  Fonts Family & Weight
+@font-family-name__base: 'Istok Web', sans-serif;
+@font-family-name__delta: 'Delta Italic', sans-serif;
+@font-family__base: @font-family-name__base, @font-family__sans-serif;
+@font-weight__black: 900;
+
+//  Sizes
+@font-size__base: unit(@font-size-unit-ratio * @font-size-ratio__base, px); // Base font size value in <b>px</b>
+@font-size__xl: ceil(1.5 * @font-size__base); // 21px
+@font-size__l: ceil(1.25 * @font-size__base); // 18px
+@font-size__s: ceil(.85 * @font-size__base); // 12px
+@font-size__xs: floor(.75 * @font-size__base); // 11px
+
+//  Link
+@link__color: @color-gray80;
+@link__text-decoration: none;
+
+@link__visited__color: @color-gray80;
+@link__visited__text-decoration: none;
+
+@link__hover__color: @color-gray80;
+@link__hover__text-decoration: none;
+
+@link__active__color: @color-gray80;
+@link__active__text-decoration: none;
+
+
+//
+//  Sidebar
+//  ---------------------------------------------
+
+@sidebar__background-color: @color-white-smoke; // Used in cart sidebar, Checkout sidebar, Tier Prices, My account navigation, Rating block background
+
+
+//
+//  Layout variables
+//  _____________________________________________
+
+//  Widths
+@layout__max-width: 1260px;
+@layout-indent__width: 20px;
+
+
+//
+//  Form variables
+//  _____________________________________________
+
+@form-element-input__height: 42px;
+@form-element-input__border: 0;
+@form-element-input__border-radius: 5px;
+@form-element-input-select__border-radius: 0px;
+
+//  Placeholder
+
+
+//
+//  Header & Navigation variables
+//  _____________________________________________
+
+
+
+//
+//  Breadcrumbs
+//  _____________________________________________
+
+
+
+//
+//  Button
+//  _____________________________________________
+
+@button__padding: 13px 31px;
+@button__border-radius: 5px;
+@button__border: 10px;
+@button__background: @color-orange1;
+@button__hover__background: @color-orange1;
+@button__disabled__opacity: 1;

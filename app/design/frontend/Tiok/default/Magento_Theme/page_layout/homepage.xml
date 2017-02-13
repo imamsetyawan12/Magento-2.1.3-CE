@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<layout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_layout.xsd">
+	
+	<update handle="empty"/>
+	
+    <referenceContainer name="page.wrapper">
+        <container name="header.container" as="header_container" label="Page Header Container"  htmlTag="header" htmlClass="page-header" before="main.content"/>
+        <container name="page.top" as="page_top" label="After Page Header" after="header.container"/>
+        <container name="main.content" htmlTag="main" htmlId="maincontent" htmlClass="page-main">
+            <container name="columns.top" label="Before Main Columns"/>
+            <container name="columns" htmlTag="div" htmlClass="columns">
+                <container name="main" label="Main Content Container" htmlTag="div" htmlClass="column main"/>
+            </container>
+        </container>
+        <container name="bigbanner.homepage" htmlTag="div" htmlClass="bigbanner-homepage" after="main" />
+        <container name="custom.widget" htmlTag="div" htmlClass="widget-homepage" after="bigbanner-homepage" />
+        <container name="how.works" htmlTag="div" htmlClass="howworks-homepage" after="custom.widget" />
+        <container name="footer-container" as="footer" before="before.body.end" label="Page Footer Container" htmlTag="footer" htmlClass="page-footer" />
+    </referenceContainer>
+</layout>

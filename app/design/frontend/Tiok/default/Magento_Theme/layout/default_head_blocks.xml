@@ -1,0 +1,8 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+    	<!-- Google Font Istok Web -->
+        <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700" rel="stylesheet" />
+        <!-- LightSlider Library CSS -->
+        <css src="js/lib/lightslider/css/lightslider.css"/>
+    </head>
+</page>

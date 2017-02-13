@@ -1,0 +1,24 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="after.body.start">
+            <!-- Hotstart Custom Javascript/jQuery codes -->
+            <block class="Magento\Theme\Block\Html\Topmenu" name="hotstart.js" template="page/js/jquery.main.phtml" />
+        </referenceContainer>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                <argument name="logo_img_width" xsi:type="number">300</argument> 
+                <argument name="logo_img_height" xsi:type="number">300</argument>
+            </arguments>
+        </referenceBlock>
+
+        <referenceContainer name="footer">
+            <!-- Create Footer CMS Links -->
+            <block class="Magento\Cms\Block\Block" name="block-one">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">block-one</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>		

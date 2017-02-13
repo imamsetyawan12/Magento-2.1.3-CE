@@ -1,0 +1,17 @@
+//
+//  Get Image URL for retina device mixin()
+//  ---------------------------------------------
+@highdpi: ~"(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx)";
+
+.background-image-path(@image_path, @filetype) {
+    background-image: ~"url(@{image_path}.@{filetype})";
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    display: inline-block;
+
+    @media @highdpi {
+        background-image: ~"url(@{image_path}_2x.@{filetype})";
+        background-size: 100%;
+    }
+}
